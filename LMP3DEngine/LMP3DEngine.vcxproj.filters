@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3D_Engine_1.0\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Errors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\GLSLProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\LoadGLTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\ResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\TextureCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\TextureLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\LMP3DEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Camera2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\SpriteBatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\InputManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Timing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Errors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\GLSLProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\GLTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\LoadGLTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\ResourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\TextureCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\TextureLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\LMP3DEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Camera2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\SpriteBatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\InputManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Timing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

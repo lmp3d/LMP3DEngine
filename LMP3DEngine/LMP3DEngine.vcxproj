@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0A1C7B9C-848E-4793-AAD7-09EAD27691B3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LMP3D_Engine_10</RootNamespace>
+    <ProjectName>LMP3DEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)deps/include/;$(IncludePath)</IncludePath>
+    <LibraryPath>
+    </LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy /Y "$(TargetDir)$(TargetName).lib" "$(SolutionDir)\deps\lib\$(TargetName).lib"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3D_Engine_1.0\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Camera2D.cpp" />
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Errors.cpp" />
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\GLSLProgram.cpp" />
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\InputManager.cpp" />
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\LMP3DEngine.cpp" />
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\LoadGLTexture.cpp" />
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\ResourceManager.cpp" />
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Sprite.cpp" />
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\SpriteBatch.cpp" />
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\TextureCache.cpp" />
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\TextureLoader.cpp" />
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Timing.cpp" />
+    <ClCompile Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Camera2D.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Errors.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\GLSLProgram.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\GLTexture.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\InputManager.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\LMP3DEngine.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\LoadGLTexture.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\ResourceManager.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Sprite.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\SpriteBatch.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\TextureCache.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\TextureLoader.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Timing.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Vertex.h" />
+    <ClInclude Include="..\..\..\..\..\Leif%27s Documents\Visual Studio 2013\Projects\LMP3D_Engine\LMP3DEngine\Window.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
