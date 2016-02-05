@@ -4,7 +4,7 @@
 #include <LMP3DEngine/SpriteBatch.h>
 
 
-const float AGENT_WIDTH = 60;
+const float ACTOR_WIDTH = 60.0f;
 
 class Zombie;
 class Human;
@@ -26,6 +26,10 @@ public:
 	glm::vec2 getPosition() const { return _position; }
 
 protected:
+	void checkTilePosition(const std::vector<std::string>& levelData, std::vector<glm::vec2>& collideTilePositions, float x, float y);
+
+	void collideWithTile(glm::vec2 tilePositon);
+
 	glm::vec2 _position;
 	LMP3DEngine::Color _color;
 	float _speed;

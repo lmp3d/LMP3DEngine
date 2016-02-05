@@ -5,7 +5,7 @@
 #include <SDL/SDL.h>
 #include <iostream>
 
-
+#include "Zombie.h"
 
 MainGame::MainGame() : _screenWidth(1024), _screenHeight(768), _gameState(GameState::PLAY), _fps(0.0f), _currentLevel(0), _player(nullptr)
 {
@@ -85,7 +85,7 @@ void MainGame::gameLoop() {
 void MainGame::updateActors() {
 	// Update all Humans
 	for (int i = 0; i < _humans.size(); i++) {
-		_humans[i]->update();
+		_humans[i]->update(_levels[_currentLevel]->getLevelData(), _humans, _zombies);
 	}
 
 	//Don't forget to update zombies

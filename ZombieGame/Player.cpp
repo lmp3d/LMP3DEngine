@@ -36,4 +36,7 @@ void Player::update(const std::vector<std::string>& levelData,
 	else if (_inputManager->isKeyPressed(SDLK_d)) {
 		_position.x += _speed;
 	}
+
+	collideWithLevel(levelData);
+
 }
